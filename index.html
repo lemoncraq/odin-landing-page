@@ -4,18 +4,30 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
         <title>Awesome website</title>
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+        </style>
     </head>
     <body>
         <header class="header">
-            <div class="header__logo">Header Logo</div>
-            <nav class="header__navigation">
-                <ul>
-                    <li><a href="#">header link one</a></li>
-                    <li><a href="#">header link two</a></li>
-                    <li><a href="#">header link three</a></li>
-                </ul>
-            </nav>
+            <div class="container">
+                <div class="header__logo">Header Logo</div>
+                <nav class="header__navigation">
+                    <ul>
+                        <li class="header__link">
+                            <a href="#">header link one</a>
+                        </li>
+                        <li class="header__link">
+                            <a href="#">header link two</a>
+                        </li>
+                        <li class="header__link">
+                            <a href="#">header link three</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <main class="main">
             <div class="jumbotron">
@@ -32,36 +44,42 @@
                         <button class="jumbotron__button">Sign up</button>
                     </div>
                     <div class="jumbotron__image">
-                        this is a placeholder for an image
+                        <p>this is a placeholder for an image</p>
                     </div>
                 </div>
             </div>
-            <div class="cards-block">
-                <div class="text-container">
-                    <h2 class="cards-block__title">Some random information.</h2>
-                    <div class="card">
-                        <img class="card__image" src="" alt="" />
-                        <p class="card__text">
-                            this is sime subtext under an illustation or image
-                        </p>
-                    </div>
-                    <div class="card">
-                        <img class="card__image" src="" alt="" />
-                        <p class="card__text">
-                            this is sime subtext under an illustation or image
-                        </p>
-                    </div>
-                    <div class="card">
-                        <img class="card__image" src="" alt="" />
-                        <p class="card__text">
-                            this is sime subtext under an illustation or image
-                        </p>
-                    </div>
-                    <div class="card">
-                        <img class="card__image" src="" alt="" />
-                        <p class="card__text">
-                            this is sime subtext under an illustation or image
-                        </p>
+            <div class="info">
+                <div class="container">
+                    <h2 class="info__title">Some random information.</h2>
+                    <div class="info__cards-block">
+                        <div class="card">
+                            <img class="card__image" src="" alt="" />
+                            <p class="card__text">
+                                this is sime subtext under an illustation or
+                                image
+                            </p>
+                        </div>
+                        <div class="card">
+                            <img class="card__image" src="" alt="" />
+                            <p class="card__text">
+                                this is sime subtext under an illustation or
+                                image
+                            </p>
+                        </div>
+                        <div class="card">
+                            <img class="card__image" src="" alt="" />
+                            <p class="card__text">
+                                this is sime subtext under an illustation or
+                                image
+                            </p>
+                        </div>
+                        <div class="card">
+                            <img class="card__image" src="" alt="" />
+                            <p class="card__text">
+                                this is sime subtext under an illustation or
+                                image
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
