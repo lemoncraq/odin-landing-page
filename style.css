@@ -4,6 +4,11 @@ body {
     font-family: "Inter", sans-serif;
 }
 .header {
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    position: fixed;
     display: flex;
     background-color: #1f2937;
 }
@@ -21,6 +26,9 @@ body {
     align-self: center;
     font-weight: bolder;
     font-size: 24px;
+}
+.header__logo a {
+    text-decoration: none;
     color: #f9faf8;
 }
 .header__navigation {
@@ -32,7 +40,7 @@ body {
     display: flex;
 }
 .header__link {
-    margin-right: 20px;
+    margin-left: 20px;
     list-style: none;
 }
 .header__link a {
@@ -44,7 +52,7 @@ body {
 }
 .jumbotron {
     display: flex;
-    min-height: 400px;
+    min-height: 500px;
     background-color: #1f2937;
 }
 
@@ -65,6 +73,13 @@ body {
 }
 .jumbotron__button {
     background-color: #3882f6;
+    font-size: 18px;
+    color: #f9faf8;
+    font-weight: bold;
+    border: #3882f6 2px solid;
+    border-radius: 8px;
+    padding: 0px 30px 0px 30px;
+    height: 35px;
 }
 .jumbotron__image {
     align-self: center;
@@ -78,6 +93,7 @@ body {
 .jumbotron__image p {
 }
 .info {
+    min-height: 400px;
 }
 .info__cards-block {
     display: flex;
@@ -106,6 +122,7 @@ body {
     text-align: center;
 }
 .quote {
+    min-height: 400px;
     display: flex;
     background-color: #e5e7eb;
 }
@@ -117,21 +134,62 @@ body {
     font-weight: lighter;
     font-style: italic;
     color: #1f2937;
+    padding-left: 200px;
+    padding-right: 200px;
 }
 .quote__author {
+    padding-right: 200px;
+    text-align: end;
     font-weight: bolder;
 }
 .action-block {
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 .action-block__content {
+    display: flex;
+    border-radius: 10px;
+    background-color: #3882f6;
+    padding: 60px 190px 60px 190px;
+    justify-content: space-between;
+    align-content: center;
 }
 .action-block__title {
+    font-size: 24px;
+    color: #f9faf8;
+    font-weight: bold;
 }
 .action-block__text {
+    color: #f9faf8;
+    font-weight: lighter;
+}
+.text-block {
 }
 .action-block__button {
     background-color: #3882f6;
+    font-size: 18px;
+    color: #f9faf8;
+    font-weight: bold;
+    border: #f9faf8 2px solid;
+    border-radius: 8px;
+    padding: 0px 30px 0px 30px;
+    height: 35px;
 }
 .footer {
     background-color: #1f2937;
+    min-height: 150px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.footer .container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.footer .container p {
+    color: #e5e7eb;
 }

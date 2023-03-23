@@ -13,24 +13,24 @@
     <body>
         <header class="header">
             <div class="container">
-                <div class="header__logo">Header Logo</div>
+                <div class="header__logo"><a href="#">Header Logo</a></div>
                 <nav class="header__navigation">
                     <ul>
                         <li class="header__link">
-                            <a href="#">header link one</a>
+                            <a href="#one">header link one</a>
                         </li>
                         <li class="header__link">
-                            <a href="#">header link two</a>
+                            <a href="#two">header link two</a>
                         </li>
                         <li class="header__link">
-                            <a href="#">header link three</a>
+                            <a href="#three">header link three</a>
                         </li>
                     </ul>
                 </nav>
             </div>
         </header>
         <main class="main">
-            <div class="jumbotron">
+            <div class="jumbotron" id="one">
                 <div class="container">
                     <div class="jumbotron__content">
                         <h1 class="jumbotron__title">
@@ -48,7 +48,7 @@
                     </div>
                 </div>
             </div>
-            <div class="info">
+            <div class="info" id="two">
                 <div class="container">
                     <h2 class="info__title">Some random information.</h2>
                     <div class="info__cards-block">
@@ -85,33 +85,35 @@
             </div>
             <div class="quote">
                 <div class="container">
-                    <p class="quote__text">
+                    <div class="quote__text">
                         This is an inspiring quote, or a testimonial from a
                         customer. Maybe it`s just filling up space, or maybe
                         people will actually read it. Who knows? All i know is
                         that it look nice.
-                    </p>
-                    <p class="quote__author">-Thor, God of Thunder</p>
+                    </div>
+                    <div class="quote__author">-Thor, God of Thunder</div>
                 </div>
             </div>
-            <div class="action-block">
+            <div class="action-block" id="three">
                 <div class="container">
                     <div class="action-block__content">
-                        <div class="action-block__title">
-                            Call to action! It`s time!
+                        <div class="text-block">
+                            <div class="action-block__title">
+                                Call to action! It`s time!
+                            </div>
+                            <div class="action-block__text">
+                                Sign up for our product by clicking that button
+                                right over there!
+                            </div>
                         </div>
-                        <div class="action-block__text">
-                            Sign up for our product by clicking that button
-                            right over there!
-                        </div>
+                        <button class="action-block__button">Sign up</button>
                     </div>
-                    <button class="action-block__button">Sign up</button>
                 </div>
             </div>
         </main>
         <footer class="footer">
             <div class="container">
-                <p>Copyright c The Odin Project 2021</p>
+                <p>Copyright © The Odin Project 2021</p>
             </div>
         </footer>
     </body>
